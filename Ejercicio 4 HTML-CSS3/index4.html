@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Programar con Python</header>
+        <ul>
+            <li><a class="nav-link" href="#Caracteristicas">Características</a></li>
+            <li><a class="nav-link" href="#Filosofia">Filosofía</a></li>
+            <li><a class="nav-link" href="#Modo_interactivo">Modo interactivo</a></li>
+            <li><a class="nav-link" href="#Comentarios">Comentarios</a></li>
+            <li><a class="nav-link" href="#Variables">Variable</a></li>
+            <li><a class="nav-link" href="#Bucle_for">Bucle for</a></li>
+            <li><a class="nav-link" href="#Bucle_while">Bucle while</a></li>
+            <li><a class="nav-link" href="https://es.wikipedia.org/wiki/Python" target="_blank">
+                Saber más de Python (Wikipedia)</a></li>
+            <li></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Caracteristicas">
+            <header>Características</header>
+            <article>
+                <p>
+                    Python es un lenguaje de programación multiparadigma. 
+                    Esto significa que más que forzar a los programadores a adoptar un estilo 
+                    particular de programación, permite varios estilos: programación orientada
+                     a objetos, programación imperativa y programación funcional. 
+                     Otros paradigmas están soportados mediante el uso de extensiones.
+                </p>
+                <p>
+                    Python usa tipado dinámico y conteo de referencias para la gestión de memoria.
+                </p>
+                <p>
+                    Una característica importante de Python es la resolución dinámica de nombres; 
+                    es decir, lo que enlaza un método y un nombre de variable durante la ejecución 
+                    del programa (también llamado enlace dinámico de métodos).
+                </p>
+                <p>
+                    Otro objetivo del diseño del lenguaje es la facilidad de extensión. 
+                    Se pueden escribir nuevos módulos fácilmente en C o C++. Python puede incluirse 
+                    en aplicaciones que necesitan una interfaz programable.
+                </p>
+                <p>
+                    Aunque la programación en Python podría considerarse en algunas situaciones hostil 
+                    a la programación funcional tradicional del Lisp, existen bastantes analogías 
+                    entre Python y los lenguajes minimalistas de la familia Lisp como puede ser Scheme.
+                </p>
+            </article>
+        </section>
+        <section id="Filosofia">
+            <header>Filosofía</header>
+                <article>
+                    <p>
+                        Los usuarios de Python se refieren a menudo a la filosofía de Python que es 
+                        bastante análoga a la filosofía de Unix. El código que siga los principios 
+                        de Python se dice que es "pythónico". Estos principios fueron descritos 
+                        por el desarrollador de Python Tim Peters en El Zen de Python.
+                    </p>
+                    <ul>
+                        <li>Bello es mejor que feo.</li>
+                        <li>Plano es mejor que anidado.</li>
+                        <li>Lo práctico gana a lo puro.</li>
+                        <li>Los errores nunca deberían dejarse pasar silenciosamente.</li>
+                        <li>Si la implementación es difícil de explicar, es una mala idea.</li>  
+                    </ul>
+                </article>
+        </section>
+        <section id="Modo_interactivo">
+            <header>Modo interactivo</header>
+                <article>
+                    <p>
+                        El intérprete de Python estándar incluye un modo interactivo en el cual se 
+                        escriben las instrucciones en una especie de intérprete de comandos: 
+                        las expresiones pueden ser introducidas una a una, pudiendo verse el resultado 
+                        de su evaluación inmediatamente, lo que da la posibilidad de probar porciones 
+                        de código en el modo interactivo antes de integrarlo como parte de un programa. 
+                        Esto resulta útil tanto para las personas que se están familiarizando con 
+                        el lenguaje como para los programadores más avanzados.
+                    </p>
+                    <p>
+                        Existen otros programas, tales como IDLE, bpython o IPython, que añaden 
+                        funcionalidades extra al modo interactivo, como la compleción automática 
+                        de código y el coloreado de la sintaxis del lenguaje.
+                    </p>
+                    <p>
+                        Ejemplo del modo interactivo:
+                    </p>
+                    <code>>>> 1 + 1
+                        2
+                        >>> a = range(10)
+                        >>> print(list(a))
+                        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                    </code>
+                </article>
+        </section>
+        <section id="Comentarios">
+            <header>Comentarios</header>
+                <article>
+                    <p>
+                        Los comentarios se pueden poner de dos formas. La primera y más apropiada 
+                        para comentarios largos es utilizando la notación ''' comentario ''', tres 
+                        apóstrofos de apertura y tres de cierre. La segunda notación utiliza 
+                        el símbolo <b>#</b>, y se extienden hasta el final de la línea. 
+                    </p>
+                    <p>
+                        El intérprete no tiene en cuenta los comentarios, lo cual es útil si 
+                        deseamos poner información adicional en el código. Por ejemplo, una 
+                        explicación sobre el comportamiento de una sección del programa.
+                    </p>
+                    <code>'''
+                        Comentario más largo en una línea en Python
+                        '''
+                        print("Hola mundo") # También es posible añadir un comentario al final de una línea de código
+                    </code>
+                </article>
+        </section>
+        <section id="Variables">
+            <header>Variables</header>
+                <article>
+                    <p>
+                        Las variables se definen de forma dinámica, lo que significa que no se 
+                        tiene que especificar cuál es su tipo de antemano y puede tomar distintos 
+                        valores en otro momento, incluso de un tipo diferente al que tenía previamente. 
+                        Se usa el símbolo <b>=</b> para asignar valores.
+                    </p>
+                    <code>x = 1
+                        x = "texto" # Esto es posible porque los tipos son asignados dinámicamente
+                    </code>
+                </article>
+        </section>
+        <section id="Bucle_for">
+            <header>Bucle for</header>
+                <article>
+                    <p>
+                        El bucle for es similar a foreach en otros lenguajes. Recorre un objeto 
+                        iterable, como una lista, una tupla o un generador, y por cada elemento del 
+                        iterable ejecuta el bloque de código interno. Se define con la palabra 
+                        clave <b>for</b> seguida de un nombre de variable, seguido de <b>in</b>,
+                        seguido del iterable, y finalmente el bloque de código interno. En cada 
+                        iteración, el elemento siguiente del iterable se asigna al nombre de 
+                        variable especificado: 
+                    </p>
+                    <code>>>> lista = ["a", "b", "c"]
+                        >>> for i in lista: # Iteramos sobre una lista, que es iterable
+                        ...     print(i)
+                        ...
+                        a
+                        b
+                        c
+                        >>> cadena = "abcdef"
+                        >>> for i in cadena: # Iteramos sobre una cadena, que también es iterable
+                        ...     print(i, end=', ') # Añadiendo end=', ' al final hacemos que no introduzca un salto de línea, sino una coma y un espacio
+                        ...
+                        a, b, c, d, e, f,
+                    </code>
+                </article>
+        </section>
+        <section id="Bucle_while">
+            <header>Bucle while</header>
+                <article>
+                    <p>
+                        El bucle while evalúa una condición y, si es verdadera, ejecuta el bloque 
+                        de código interno. Continúa evaluando y ejecutando mientras la condición sea
+                         verdadera. Se define con la palabra clave <b>while</b> seguida de la condición, 
+                         y a continuación el bloque de código interno:
+                    </p>
+                    <code>>>> numero = 0
+                        >>> while numero < 10:
+                        ...     print(numero, end=" ")
+                        ...     numero += 1  # Un buen programador modificará las variables de control al finalizar el ciclo while
+                        ...
+                        0 1 2 3 4 5 6 7 8 9
+                    </code>
+                </article>
+        </section>
+    </main>
+</body>
+</html>

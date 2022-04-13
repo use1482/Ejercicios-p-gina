@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de encuesta</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<header>
+    <h1 id="title">Formulario de encuesta</h1>
+    <p id="description">
+        <i>Gracias por dedicarnos su tiempo para ayudarnos a mejorar.</i>
+    </p>
+</header>
+<div>
+    <form id="survey-form">
+        <div id="group-label">
+            <label for="name" 
+            id="name-label">Nombre</label>
+
+            <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            class="groupinput" 
+            placeholder="Inserte su nombre" 
+            required>
+        </div>
+        <div id="group-label">
+            <label for="name" 
+            id="email-label">Email</label>
+
+            <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            class="groupinput" 
+            placeholder="Inserte su email" 
+            required>
+        </div>
+        <div id="group-label">
+            <label for="number" 
+            id="number-label">Edad (Opcional)</label>
+            
+            <input 
+            type="number" 
+            name="age" 
+            id="number" 
+            class="groupinput" 
+            min="18" 
+            max="99" 
+            placeholder="Su edad">
+        </div>
+        <div>
+            <p>¿Que opción le define mejor actualmente?</p> 
+            <select 
+            name="role" 
+            id="dropdown" 
+            class="groupinput"
+            required>
+            <option disabled selected value>Seleccione una de las opciones</option>
+            <option value="student">Estudiante</option>
+            <option value="job">Trabajo a tiempo completo</option>
+            <option value="learner">Trabajo a tiempo parcial</option>
+            <option value="preferNo">Prefiero no decirlo</option>
+            <option value="other">Otros</option>
+            </select>
+        </div>
+        <div>
+            <p>¿Recomendarías free Code Camp a un amigo?</p>
+            <label>
+                <input 
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked/>
+                Siempre
+            </label>
+        </div>
+        <div>
+            <label>
+                <input 
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked/>
+                Quizás alguna vez
+            </label>
+        </div>
+        <div>
+            <label>
+                <input 
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked/>
+                Nunca
+            </label>
+        </div>
+        <div>
+            <p id="p">¿En qué te gustaría mejorar?</p>
+            <label>
+                <input
+                name="prefer"
+                value="Proyectos Front-end" 
+                class="checkboxx"
+                type="checkbox"/>
+                Proyectos Front-end
+            </label>
+        </div>
+        <div>
+            <label>
+                <input
+                name="prefer"
+                value="Proyectos Back-end" 
+                class="checkboxx"
+                type="checkbox"/>
+                Proyectos Back-end
+            </label>
+        </div>
+        <div>
+            <label>
+                <input
+                name="prefer"
+                value="Big Data" 
+                class="checkboxx"
+                type="checkbox"/>
+                Big Data
+            </label>
+        </div>
+        <div>
+            <label>
+                <input
+                name="prefer"
+                value="Machine Learning" 
+                class="checkboxx"
+                type="checkbox"/>
+                Machine Learning
+            </label>
+        </div>
+        <div>
+            <label>
+                <input
+                name="prefer"
+                value="Business Intelligence" 
+                class="checkboxx"
+                type="checkbox"/>
+                Business Intelligence
+            </label>
+        </div>
+        <div>
+            <label>
+                <input
+                name="prefer"
+                value="Seguridad informática" 
+                class="checkboxx"
+                type="checkbox"/>
+                Seguridad informática
+            </label>
+        </div>
+        <div>
+            <p id="p">¿Algún comentario o sugerencia?</p>
+            <textarea 
+            name="comments" 
+            id="comment" 
+            class="textarea"
+            placeholder="Introduzca aquí su comentario..."></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit" class="button">
+                Enviar
+            </button>
+        </div>
+    </form>
+</div>  
+</body>
+</html>
